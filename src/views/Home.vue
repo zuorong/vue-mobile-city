@@ -1,18 +1,37 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="home" style="height: 2000px;">
+    <button @click="openCascader">open city</button>
+    <Cascader
+      :visible.sync="isShow"
+      columns="2"
+      @confirm="onConfirm"
+      @cancel="onCancel"
+    />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import Cascader from '../components/cascader'
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    Cascader
+  },
+  data () {
+    return {
+      isShow: false
+    }
+  },
+  methods: {
+    openCascader () {
+      this.isShow = true
+    },
+    onConfirm (d) {
+      console.log(d)
+    },
+    onCancel () {
+      console.log('cancel')
+    }
   }
 }
 </script>

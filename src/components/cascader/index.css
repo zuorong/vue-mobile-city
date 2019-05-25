@@ -1,0 +1,28 @@
+.area{
+  padding: 15px 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.area div{
+  width: 29.7%;
+  height: 34px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  line-height: 34px;
+  text-align: center;
+  margin: 0 15px 15px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.area div:nth-of-type(3n) {
+  margin-right: 0;
+}
+.area div.active{
+  border: 1px solid #29d1b4;
+  color: #29d1b4;
+}

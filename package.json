@@ -1,11 +1,23 @@
 {
-  "name": "city",
-  "version": "0.1.0",
-  "private": true,
+  "name": "vue-mobile-city",
+  "version": "1.0.1",
+  "description": "this is a vue2.x mobile city",
+  "author": "dengzuorong",
+  "license": "ISC",
+  "main": "index.js",
+  "keywords": [
+    "vue-mobile-city",
+    "vue-city",
+    "vue-cascader"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zuorong/vue-mobile-city.git"
   },
   "dependencies": {
     "core-js": "^2.6.5",
