@@ -15,7 +15,7 @@ npm i vue-mobile-city
 ## 方法
 | 事件  | 返回  | 描述  |
 | ------------ | ------------ | ------------ |
-|  **change**  |  function  |  返回选中城市名称以及城市编码
+|  **confirm**  |  function  |  返回选中城市名称以及城市编码
 |  **cancel**  |  function  |  取消事件 |
 ## 使用方法
 ```
